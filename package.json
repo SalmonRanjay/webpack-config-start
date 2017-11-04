@@ -1,0 +1,47 @@
+{
+  "name": "webpack-config-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean" : "rimraf dist",
+    "build": " NODE_ENV=production npm run clean && webpack -p",
+    "serve": "webpack-dev-server",
+    "deployGit": "npm run build && git subtree push --prefix dist origin  gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalmonRanjay/webpack-config-start.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalmonRanjay/webpack-config-start/issues"
+  },
+  "homepage": "https://github.com/SalmonRanjay/webpack-config-start#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-loader": "^2.0.8",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "postcss-hexrgba": "^1.0.0",
+    "postcss-import": "^8.1.2",
+    "postcss-loader": "^2.0.8",
+    "postcss-mixins": "^4.0.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^1.2.0",
+    "postcss-smart-import": "^0.7.5"
+  }
+}
